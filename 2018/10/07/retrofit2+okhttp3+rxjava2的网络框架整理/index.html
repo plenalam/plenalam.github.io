@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Android,总结," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="简单易懂的现代魔法账">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="[TOC] 期望 不需要业务层处理code-msg-data的顶层返回封装格式.错误的msg和网络错误一起走错误回调. 发送请求前能检查网络,网络不可用时直接返回错误 不需要每次手动添加通用参数token token过期,可以重试1次,重试仍然失败就退出登录 token冲突,要自动退出登录 业务层调用尽量要简单  最终效果1234567891011121314CommonRequest.getIn">
+<meta name="keywords" content="Android,总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="retrofit2+okhttp3+rxjava2的网络框架整理">
+<meta property="og:url" content="http://yoursite.com/2018/10/07/retrofit2+okhttp3+rxjava2的网络框架整理/index.html">
 <meta property="og:site_name" content="简单易懂的现代魔法账">
+<meta property="og:description" content="[TOC] 期望 不需要业务层处理code-msg-data的顶层返回封装格式.错误的msg和网络错误一起走错误回调. 发送请求前能检查网络,网络不可用时直接返回错误 不需要每次手动添加通用参数token token过期,可以重试1次,重试仍然失败就退出登录 token冲突,要自动退出登录 业务层调用尽量要简单  最终效果1234567891011121314CommonRequest.getIn">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-10-07T13:30:10.364Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="简单易懂的现代魔法账">
+<meta name="twitter:title" content="retrofit2+okhttp3+rxjava2的网络框架整理">
+<meta name="twitter:description" content="[TOC] 期望 不需要业务层处理code-msg-data的顶层返回封装格式.错误的msg和网络错误一起走错误回调. 发送请求前能检查网络,网络不可用时直接返回错误 不需要每次手动添加通用参数token token过期,可以重试1次,重试仍然失败就退出登录 token冲突,要自动退出登录 业务层调用尽量要简单  最终效果1234567891011121314CommonRequest.getIn">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/07/retrofit2+okhttp3+rxjava2的网络框架整理/"/>
 
 
 
 
 
-  <title>简单易懂的现代魔法账</title>
+  <title>retrofit2+okhttp3+rxjava2的网络框架整理 | 简单易懂的现代魔法账</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,9 +228,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -256,9 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/07/retrofit2+okhttp3+rxjava2的网络框架整理/" itemprop="url">retrofit2+okhttp3+rxjava2的网络框架整理</a></h1>
+          <h1 class="post-title" itemprop="name headline">retrofit2+okhttp3+rxjava2的网络框架整理</h1>
         
 
         <div class="post-meta">
@@ -308,9 +310,7 @@
       
 
       
-        
-          
-            <p>[TOC]</p>
+        <p>[TOC]</p>
 <h2 id="期望"><a href="#期望" class="headerlink" title="期望"></a>期望</h2><ul>
 <li>不需要业务层处理code-msg-data的顶层返回封装格式.错误的msg和网络错误一起走错误回调.</li>
 <li>发送请求前能检查网络,网络不可用时直接返回错误</li>
@@ -348,8 +348,6 @@
 </ul>
 <h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.jianshu.com/p/e88e61e1a721" target="_blank" rel="noopener">RxJava2 实战知识梳理(14) - 在 token 过期时，刷新过期 token 并重新发起请求</a></p>
 
-          
-        
       
     </div>
     
@@ -364,140 +362,38 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/04/Android全屏下坐标偏移问题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="plena">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="简单易懂的现代魔法账">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/04/Android全屏下坐标偏移问题/" itemprop="url">Android全屏下坐标偏移问题</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-04T11:07:26+08:00">
-                2018-10-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Android/" rel="tag"># Android</a>
           
-            
+            <a href="/tags/总结/" rel="tag"># 总结</a>
           
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>一个全屏(设置了SYSTEM_UI_FLAG_FULLSCREEN)的Activity需要根据动态定位view的位置,于是用传统的方式捕获屏幕宽高.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">WindowManager windowManager = getWindowManager(); </span><br><span class="line">Display display = windowManager.getDefaultDisplay();  </span><br><span class="line">screenWidth = display.getWidth();  </span><br><span class="line">screenHeight = display.getHeight();</span><br></pre></td></tr></table></figure>
-<p>横屏情况下,在三星S9上所有view都向左偏移.定位到四个极限点,发现左上和左下没有问,但是右边两个点向左偏移,目测是一个标题的高度.<br>打印log果然发现screenWidth少了标题栏高度  </p>
-<p>试了试其他几个常用的获取屏幕size的Api,结果都一样.于是转换思路,在界面显示后调用根布局的getMeasuredHeight()和getMeasuredWidth(),返回了正确结果.</p>
-<p>后来发现Android在SDK17后多了个新方法getRealMetrics<br>则<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">DisplayMetrics metrics = new DisplayMetrics();</span><br><span class="line">Display display = getWindowManager().getDefaultDisplay();</span><br><span class="line"></span><br><span class="line"> // For JellyBean 4.2 (API 17) and onward</span><br><span class="line">if (android.os.Build.VERSION.SDK_INT &gt;= android.os.Build.VERSION_CODES.JELLY_BEAN_MR1) &#123;</span><br><span class="line">    display.getRealMetrics(metrics);</span><br><span class="line">    screenWidth = metrics.widthPixels;</span><br><span class="line">    screenHeight = metrics.heightPixels;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
-<p>这种方法也能成功获取屏幕大小</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://stackoverflow.com/questions/10991194/android-displaymetrics-returns-incorrect-screen-size-in-pixels-on-ics" target="_blank" rel="noopener">https://stackoverflow.com/questions/10991194/android-displaymetrics-returns-incorrect-screen-size-in-pixels-on-ics</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/04/Android全屏下坐标偏移问题/" rel="next" title="Android全屏下坐标偏移问题">
+                <i class="fa fa-chevron-left"></i> Android全屏下坐标偏移问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -507,10 +403,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -518,6 +415,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -538,8 +439,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -606,6 +516,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#期望"><span class="nav-number">1.</span> <span class="nav-text">期望</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现"><span class="nav-number">2.</span> <span class="nav-text">实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Service"><span class="nav-number">2.1.</span> <span class="nav-text">Service</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RetrofitFactory"><span class="nav-number">2.2.</span> <span class="nav-text">RetrofitFactory</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#NewWorkStateIntercepter"><span class="nav-number">2.2.1.</span> <span class="nav-text">NewWorkStateIntercepter</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ParameterIntercepter"><span class="nav-number">2.2.2.</span> <span class="nav-text">ParameterIntercepter</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CommonRequest"><span class="nav-number">2.3.</span> <span class="nav-text">CommonRequest</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TokenRefresher"><span class="nav-number">2.4.</span> <span class="nav-text">TokenRefresher</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BaseJsonResult"><span class="nav-number">2.5.</span> <span class="nav-text">BaseJsonResult</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#BaseJsonPageResult"><span class="nav-number">2.5.1.</span> <span class="nav-text">BaseJsonPageResult</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BaseObserver"><span class="nav-number">2.6.</span> <span class="nav-text">BaseObserver</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#待改进的地方"><span class="nav-number">3.</span> <span class="nav-text">待改进的地方</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -739,6 +665,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
